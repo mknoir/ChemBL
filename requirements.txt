@@ -1,0 +1,5 @@
+streamlit
+rdkit
+pandas
+numpy
+chembl_webresource_client.new_client
