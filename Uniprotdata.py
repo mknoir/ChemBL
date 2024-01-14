@@ -153,7 +153,7 @@ if not targets.empty:
     output_df_sorted = output_df_sorted.drop("ROMol", axis=1)
     st.write(output_df_sorted.head())
     st.subheader("Bar Chart of pIC50 Values for the First 5 Molecules:")
-    chart_data = output_df.head(5)
+    chart_data = output_df_sorted.head(5)
     st.bar_chart(chart_data.set_index('molecule_chembl_id')['pIC50'])
     st.subheader("Download Data:")
     st.dataframe(output_df_sorted)
