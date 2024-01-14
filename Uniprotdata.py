@@ -75,6 +75,7 @@ if not targets.empty:
     st.progress(40)
     st.subheader("Processed Bioactivity Data:")
     st.write(bioactivities_df.head())
+    st.subheader("Fetching coumpound data...")
 
     # Fetch Compound Data
     compounds_api = new_client.molecule
