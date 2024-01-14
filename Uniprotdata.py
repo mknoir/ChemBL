@@ -61,6 +61,7 @@ if not targets.empty:
     bioactivities_df = bioactivities_df.astype({"standard_value": 'float64'})
     bioactivities_df.dropna(axis=0, how='any', inplace=True)
     bioactivities_df = bioactivities_df[bioactivities_df["standard_units"] == "nM"]
+    bioactivities_df = bioactivities_df[bioactivities_df["type"] == "IC50"]
     bioactivities_df.drop_duplicates("molecule_chembl_id", keep="first", inplace=True)
     bioactivities_df.reset_index(drop=True, inplace=True)
     bioactivities_df.rename(
