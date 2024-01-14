@@ -32,7 +32,7 @@ if not targets.empty:
     target = targets.iloc[0]
     chembl_id = target.target_chembl_id
     st.progress(15)
-    st.subheader("fetching bioactivity data for target...")
+    st.subheader("Fetching bioactivity data for target...")
 
     # Get Bioactivity Data
     bioactivities_api = new_client.activity
