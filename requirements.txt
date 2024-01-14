@@ -4,3 +4,4 @@ pandas
 numpy
 chembl_webresource_client
 matplotlib
+tqdm
